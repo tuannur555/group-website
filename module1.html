@@ -33,7 +33,6 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background-color: #333;
   position: absolute;
   right: 0;
@@ -46,11 +45,11 @@ ul {
 li {
   float: left;
   text-align: left;
-  margin-left: 14.3%;
+  margin-left: 10% ;
 }
 
 li a {
-  display: block;
+  display: inline-block;
   color: white;
   text-align: center;
   padding: 22px 20px;
@@ -59,7 +58,6 @@ li a {
 
 li a:hover {
   background-color: #111;
-  b
 }
 </style>
 <style>
@@ -172,9 +170,63 @@ hr {
      width: 100%;
   }
 }
+
+.dropbtn {
+  background-color: #333;
+  color: white;
+  border: none;
+  font-family: century gothic;
+  font-size: 15px;
+  display: inline-block;
+  color: white;
+  text-align: center;
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #6C766D;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #111;}
+
 </style>
 <ul> 
     <li><a href="homepage.html">HOME</a></li>
+    <li>
+      <div class="dropdown">
+        <button class = "dropbtn">MODULE</button>
+        <div class="dropdown-content">
+          <a href="module1.html">MODULE 1</a>
+          <a href="module2.html">MODULE 2</a>
+          <a href="module3.html">MODULE 3</a>
+          <a href="module4.html">MODULE 4</a>
+          <a href="module5.html">MODULE 5</a>
+          <a href="module6.html">MODULE 6</a>
+        </div>
+
+      </div>
+    </li>
     <li><a href="aboutus.html">ABOUT US</a></li>
     <li><a href="contact.html">CONTACT</a></li>
     <li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto; font-size: 15px; font-family: century gothic">SIGN UP</button></li>
@@ -553,73 +605,6 @@ function topFunction() {
 </div>
 <br><br><br>
 
-<!--comment section-->
-<style>
-body {font-family: century gothic;}
-* {box-sizing: border-box;}
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-  font-family: century gothic;
-}
-
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-family: century gothic;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  margin-left: 30px;
-  margin-right: 30px;
-}
-</style>
-</head>
-<body>
-
-<p style="font-size: 24px; font-family: century gothic; color:black; margin-left: 32px; margin-right: 32px; text-align: center;"><strong>Any questions? Fill in the form below:</strong></p>
-<div class="container">
-  <form action="/action_page.php">
-    <label for="fname">Name (required)</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Email address (required)</label>
-    <input type="text" id="email" name="email" placeholder="Your email adress..">
-
-    <label for="subject">Message</label>
-    <textarea id="Message" name="Message" placeholder="Write something.." style="height:200px"></textarea>
-
-    <button onclick="myFunction()">Submit</button>
-    
-    <script>
-      function myFunction() {
-        alert("Your message has been successfully sent!");
-        }
-    </script>
-  </form>
-</div>
-
-<br><br><br>
-
-
 <!--footer-->
   <style>
     .footer {
@@ -669,122 +654,6 @@ input[type=submit]:hover {
       <a href="#" class="fa fa-rss"></a>
       <p style="font-color: white; font-size: 12px; font-family: century gothic; margin-top: -8px;">©2021 by AlphaTeach Team</p>
     </div>
-
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>
