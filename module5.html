@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Module 5 | AlphaTeach</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="logo education.png" type="image/png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+<body>
+
+<style>
+body {
+  height: 1600px;
+  overflow-x: hidden;
+}
+</style>
+
+<!--header-->
+<style>
+
+  marquee {
+	margin-right: 300px;
+	margin-left: 300px
+		}
+</style>
+
+	<div><p style="font-family: century gothic; font-size: 17px; color: orange;"><strong><marquee>THE COMPUTER WAS BORN TO SOLVE PROBLEMS THAT DID NOT EXISTS BEFORE - BILL GATES
+	 &#128512 | COMPUTER IS NOT A DEVICE ANYMORE, IT IS AN EXTENSION OF YOUR MIND AND GATEWAY TO OTHER PEOPLE - MARK SHUTTLEWORTH &#128512</marquee></strong></p></div>
+
+<!-- Navbar -->
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  position: absolute;
+  right: 0;
+  font-family: century gothic;
+  font-size: 15px;
+  left: 0;
+  top: 2;
+}
+
+li {
+  float: left;
+  text-align: left;
+  margin-left: 10% ;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 22px 20px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #333;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+.dropbtn {
+  background-color: #333;
+  color: white;
+  border: none;
+  font-family: century gothic;
+  font-size: 15px;
+  display: inline-block;
+  color: white;
+  text-align: center;
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #6C766D;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #111;}
+
+</style>
+<ul> 
+    <li><a href="homepage.html">HOME</a></li>
+    <li>
+      <div class="dropdown">
+        <button class = "dropbtn">MODULE</button>
+        <div class="dropdown-content">
+          <a href="module1.html">MODULE 1</a>
+          <a href="module2.html">MODULE 2</a>
+          <a href="module3.html">MODULE 3</a>
+          <a href="module4.html">MODULE 4</a>
+          <a href="module5.html">MODULE 5</a>
+          <a href="module6.html">MODULE 6</a>
+        </div>
+
+      </div>
+    </li>
+    <li><a href="aboutus.html">ABOUT US</a></li>
+    <li><a href="contact.html">CONTACT</a></li>
+    <li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto; font-size: 15px; font-family: century gothic">SIGN UP</button></li>
+</ul>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+<!--HEADER-->
+<style>
+.header { 
+  margin-left: -12px;
+  margin-right: -12px;
+  overflow: hidden;
+  position: static;}
+
+.text {
+  background-color: white;
+  color: black;
+  font-size: 6vw; 
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  width: 80%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
+</style>
+
+<div class="header">
+    <img src="header5.jpg" alt="header5" width="1526px" height="535px">
+</div>
+<div class="image-container">
+  <div class="text">ADDITIONAL FUNCTION TO ADD TO COMPUTER</div>
+</div>
+</head>
+
+<!--From Bottom to Top-->
+<style>
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  width: 5%;
+  border-radius: 5%;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<br><br><br>
+
+<!--content-->
+
+<style>
+  
+.column1 {
+  float: center;
+  width: 1550px;
+  padding: 10px;
+  height: 200px; 
+  margin-left: -11px;
+  margin-top: -11px;
+}
+
+.column2 {
+  float: center;
+  width: 1550px;
+  padding: 10px;
+  height: 2889px; 
+  margin-left: -6px;
+  margin-right: -6px;
+  margin-top: -20px;
+}  
+
+.column3 {
+  float: center;
+  width: 1550px;
+  padding: 10px;
+  height: 1730px; 
+  margin-left: -6px;
+  margin-top: -11px;
+}
+
+.column4 {
+  float: center;
+  width: 1550px;
+  padding: 10px;               
+  height: 2319px; 
+  margin-left: -6px;
+  margin-top: -11px;
+} 
+</style>
+
+      <div class="column1" style="background-color:#ECA192;">
+        <p style="font-family: century gothic; font-size: 21px; margin-left: 170px; margin-right: 170px; text-align: center;">The purpose of these devices is to translate the machine's response to a usable form for the computer user. Input devices are the hardware that give computers instructions. Output devices relay the response from the computer in the form of a visual response (monitor), sound (speakers) or media devices. If you have a printer, webcam, speaker or other peripherals, you can connect them at this point. Other peripherals may include software that needs to be installed before you can begin using them. Use the instructions included with the device to install it if necessary.</p>
+      </div>
+
+<br><br><br><br>
+
+      <div class="column2" style="background-color: #BAFEB0">
+        <h1 style="font-family: century gothic; font-size: 26px; text-align: center;">1. PRINTER</h1>
+        <center><img src="printer.jpg" alt="printer" width="30%" height="20%"></center> 
+        <p style="font-family: century gothic; font-size: 21px; margin-left: 200px; margin-right: 200px; text-align: center;">The most common way to connect a printer to your PC is by USB cable, which makes it a local printer. You can also install a wireless printer or add a printer connected to another laptop or PC on your network. We'll cover these scenarios below:</p><br><br><br><br>
+        <p style="border-top-style: solid; margin-right: 70px; margin-left: 40px;"></p><br><br><br>
+        <center><img src="p1.jpg" width="20%">
+        <p style="font-family: century gothic; font-size: 21px; color: darkblue; margin-left: 200px; margin-right: 200px; text-align: center;">Step 1: Connect the printer to your computer using the USB cable and turn it on.</p><br><br><br><br>
+        <center><img src="p2.jpg" width="20%">
+        <p style="font-family: century gothic; font-size: 21px; color: darkblue; margin-left: 200px; margin-right: 200px; text-align: center;">Step 2: Open the Settings app from the Start menu.</p><br><br><br><br>
+        <center><img src="p3.jpg" width="40%">
+        <p style="font-family: century gothic; font-size: 21px; color: darkblue; margin-left: 200px; margin-right: 200px; text-align: center;">Step 3: Click Devices.</p><br><br><br><br>
+        <center><img src="p4.jpg" width="25%">
+        <p style="font-family: century gothic; font-size: 21px; color: darkblue; margin-left: 200px; margin-right: 200px; text-align: center;">Step 4: Click Add a printer or scanner</p><br><br><br><br>
+        <center><img src="p5.jpg" width="25%">
+        <p style="font-family: century gothic; font-size: 21px; color: darkblue; margin-left: 200px; margin-right: 200px; text-align: center;">Step 5: If Windows detects your printer, click on the name of the printer and follow the on-screen instructions to finish the installation. And you're done. If Windows doesn't find your connected printer, click on "the printer that I wanted isn't listed".</p><br><br><br><br>
+        <center><img src="p6.jpg" width="25%"><br><br>
+        <li style="font-family: century gothic; font-size: 21px; color: darkblue; margin-left: 200px; margin-right: 200px; text-align: center;">Then let the Windows troubleshooting guide help you find your printer. It will search for available printers and help you download the drivers for them.</li><br>
+        <li style="font-family: century gothic; font-size: 21px; color: darkblue; margin-left: 200px; margin-right: 200px; text-align: center;">If that doesn't work, head to your printer manufacturer's website and download the drivers and installation tools for your printer.</li></p><br><br><br><br><br><br><br><br><br>
+        <p style="border-bottom-style: solid; margin-right: 70px; margin-left: 40px;"></p>
+        <br><br>
+      </div>
+
+<br><br><br><br>
+
+      <div class="column3" style="background-color: darksalmon">
+        <h1 style="font-family: century gothic; font-size: 26px; text-align: center;">2. WEBCAM</h1>
+        <center><img src="webcam.jpg" alt="webcam" width="30%" height="20%"></center> 
+        <br><br><br><br>
+        <p style="border-top-style: solid; margin-right: 70px; margin-left: 40px;"></p><br><br><br>
+        <center><img src="wb1.jpg" width="20%">
+        <p style="font-family: century gothic; font-size: 21px; color: darkblue; margin-left: 200px; margin-right: 200px; text-align: center;">Step 1: Open the Settings app by pressing the Windows + I shortcut key, or clicking the Settings icon from the Start Menu in Windows 10.</p><br><br><br><br>
+        <center><img src="wb2.jpg" width="40%">
+        <p style="font-family: century gothic; font-size: 21px; color: darkblue; margin-left: 200px; margin-right: 200px; text-align: center;">Step 2: From the Settings window, click Privacy.</p><br><br><br><br>
+        <center><img src="wb3.jpg" width="25%">
+        <p style="font-family: century gothic; font-size: 21px; color: darkblue; margin-left: 200px; margin-right: 200px; text-align: center;">Step 3: Choose Camera in the left pane. You’ll see an option that says “Let apps use my camera”. Slide the toggle to On and select which of the apps underneath can use your camera, or toggle Off to prevent all apps from accessing your camera.</p><br><br><br><br>
+        <p style="border-bottom-style: solid; margin-right: 70px; margin-left: 40px;"></p>
+        <br><br>
+      </div>
+
+<br><br><br><br>
+
+     <div class="column4" style="background-color: darkseagreen">
+        <h1 style="font-family: century gothic; font-size: 26px; text-align: center;">3. WIRELESS SPEAKER/ BLUETOOTH DEVICE</h1>
+        <center><img src="wireless.jpg" alt="printer" width="30%" height="20%"></center> 
+        <p style="font-family: century gothic; font-size: 21px; margin-left: 200px; margin-right: 200px; text-align: center;">This is one of the example wireless speaker or Bluetooth device that you can use and connect to your computer. Wireless speakers have been widely used to provide music throughout a house by the touch of a button.</p><br><br><br><br>
+        <p style="border-top-style: solid; margin-right: 70px; margin-left: 40px;"></p><br><br><br>
+        <center><img src="w1.jpg" width="27%">
+        <p style="font-family: century gothic; font-size: 21px; color: darkblue; margin-left: 200px; margin-right: 200px; text-align: center;">Step 1: Press your speaker's "Power" button to turn it on.</p>
+        <li style="font-family: century gothic; font-size: 21px; color: darkblue; margin-left: 200px; margin-right: 200px; text-align: center;">You need to make sure the “power” button has light after you press it, this is help you to know that your speaker is in a good condition.</li><br><br><br><br><br><br>
+        <li style="font-family: century gothic; font-size: 21px; color: darkblue; margin-left: 200px; margin-right: 200px; text-align: center;">You are also need to make sure that your speaker is as close to your computer as possible while pairing. The distance between speaker and your computer will effect of the connection to the speaker.</li><br><br><br><br><br><br><br><br><br><br>
+        <center><img src="w2.jpg" width="40%">
+        <p style="font-family: century gothic; font-size: 21px; color: darkblue; margin-left: 200px; margin-right: 200px; text-align: center;">Step 2: Open your Bluetooth in your computer.</p>
+        <li style="font-family: century gothic; font-size: 21px; color: darkblue; margin-left: 400px;">Open your computer and go to the windows settings. Click “devices”</li><br><br><br><br><br><br><br><br>
+        <center><img src="w3.jpg" width="27%"><br><br>
+        <li style="font-family: century gothic; font-size: 21px; color: darkblue; margin-left: 200px; margin-right: 200px; text-align: center;">After that, click the on Bluetooth to turn on your speaker. The speaker enters pairing mode automatically by just turning on the speaker.</li><br><br><br><br><br><br><br><br><br><br>
+        <center><img src="w4.jpg" width="27%"><br><br>
+        <li style="font-family: century gothic; font-size: 21px; color: darkblue; margin-left: 320px; text-align: center;">Choose your devices and click. It will be connected after you click on your devices.</li><br><br><br><br>
+        <li style="font-family: century gothic; font-size: 21px; color: darkblue; margin-left: 430px;text-align: center;">If the  connection is not established, repeat from the first step.</li><br><br><br><br>
+        <li style="font-family: century gothic; font-size: 21px; color: darkblue; margin-left: 200px; margin-right: 200px; text-align: center;">If you want to disconnected your device with your computer, just turn off the Bluetooth in your computer and you can also press the “power” button on your speaker to shut down your speaker.</li><br>
+        <br><br><br><br><br><br><br><br><br>
+        <p style="border-bottom-style: solid; margin-right: 70px; margin-left: 40px;"></p>
+        <br><br>
+      </div>
+
+
+<br><br><br>
+
+<!--footer-->
+  <style>
+    .footer {
+      position: absolute;
+      text-align: center;
+      background: #2E2E2E;
+      color: white;
+      right: 0;
+      left: 0;
+      height: 110px; }
+
+    .fa {  
+      padding: 20px;
+      font-size: 30px;
+      width: 30px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+      border-radius: 50%;
+      left: 20px}
+
+    .fa:hover {
+      opacity: 0.5;}
+
+    .fa-facebook {
+      color: white;}
+
+    .fa-twitter {
+      color: white;} 
+
+    .fa-youtube {
+      color: white;}
+
+    .fa-instagram {
+      color: white;}
+
+    .fa-rss {
+      color: white;}
+
+  </style>
+
+    <div class="footer">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-rss"></a>
+      <p style="font-color: white; font-size: 12px; font-family: century gothic; margin-top: -8px;">©2021 by AlphaTeach Team</p>
+    </div>
+
+</body>
+</html>
